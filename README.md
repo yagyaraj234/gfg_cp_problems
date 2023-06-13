@@ -1,2 +1,5 @@
-# gfg_cp_problems
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+# Problem Solving Progress
+
+This repository tracks my progress in solving problems from GeeksforGeeks (GFG) and LeetCode.
+
+## GeeksforGeeks
