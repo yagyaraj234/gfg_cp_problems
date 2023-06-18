@@ -1,17 +1,23 @@
 class Solution {
 public:
+
+    void reverse(vector<int> &nums,int low,int high){
+        while(low<=high){
+            swap(nums[low++],nums[high--]);
+            
+        }
+    }
     void rotate(vector<int>& nums, int k) {
 
 
-        int s= nums.size();
+        k=k%nums.size();
+        int s= nums.size()-1;
         
-        vector<int> temp(s);
 
-        for(int i=0;i<s;i++){
-            temp[(i+k)%s]=nums[i];
-        }
 
-        nums=temp;
+        reverse(nums,0,s);
+        reverse(nums,0,k-1);
+        reverse(nums,k,s);
         
     }
 };
