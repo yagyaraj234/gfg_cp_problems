@@ -1,19 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-void rotate (int arr[],int n,int k){
-    int temp[7];
-
-    for(int i=0;i<n;i++){ // Here We run code from n-k means 
-
-        // For example  [1,2,3,4,5,6,7]  k=3
-        // then here we have to push three elem in front so we have to push n-k elem three time to the right
-
-        temp[arr[(i+k)%n]]=arr[i];
-    }
-    arr=temp;
-}
-
 int main(){
     int n=7;       // no of elemets in array
     int k=3;   // Now of elements to rotate
