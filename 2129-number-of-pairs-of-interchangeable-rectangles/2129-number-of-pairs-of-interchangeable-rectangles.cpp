@@ -12,14 +12,15 @@ public:
 
             double a=first/second;
             ump[a]++;
+            
+        }
+        for(auto it: ump){
+            cout<<it.second<<endl;
         }
 
         for(auto it:ump){
             if(it.second>1){
-                while(it.second!=1){
-                it.second--;
-                ans+=it.second;
-                }
+                ans+=((it.second)*1LL*(it.second-1))/2;
             }
         }
         return ans;
