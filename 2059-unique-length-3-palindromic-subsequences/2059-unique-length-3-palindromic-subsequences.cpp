@@ -13,11 +13,11 @@ public:
 
         for(int i=0;i<26;i++){
             if(mp[i].second!=-1){
-                unordered_map<char,int> ump;
+                unordered_set<char> ust;
                 for(int j=mp[i].first+1;j<mp[i].second;j++){
-                    ump[s[j]]=1;
+                    ust.insert(s[j]);
                 }
-                ans+=ump.size();
+                ans+=ust.size();
             }
         }
             return ans;
